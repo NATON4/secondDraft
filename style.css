@@ -225,7 +225,7 @@ nav {
 /*The start of right side information*/
 
 .right-nav-section {
-    background-image: url(../images/white_house.png);
+    background-image: url(images/white_house.png);
     margin-left: 720px;
     height: 720px;
     width: 720px;
@@ -339,7 +339,7 @@ nav {
 /*The start of subscribe block*/
 
 .subscribe-block {
-    background-image: url(../images/Rectangle\ 24.png);
+    background-image: url(images/Rectangle\ 24.png);
     background-repeat: no-repeat;
     width: 1200px;
     height: 312px;
