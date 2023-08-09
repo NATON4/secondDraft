@@ -13,7 +13,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@500&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@600&display=swap" rel="stylesheet">
     </head>
-<body>
+<body class="body">
   <div class="blur-effect-1">
     <svg xmlns="http://www.w3.org/2000/svg" width="441" height="481" viewBox="0 0 441 481" fill="none">
         <g opacity="0.3" filter="url(#filter0_f_4_18)">
@@ -42,14 +42,14 @@
         </defs>
       </svg>
     </div>
-    <header>
-        <nav>
+    <header class="header">
+        <nav class="header-navigation-list">
             <ul class="navigation-list">
-                <li class="navigation-list__logo"><img src="images/Logo.svg" alt="Hounter logo"></li>
-                <li class="navigation-list__about-us">About Us</li>
-                <li class="navigation-list__article">Article</li>
+                <li class="navigation-list__logo"><img src="images/hounter-logo.svg" alt="Hounter logo"></li>
+                <li class="navigation-list__about-us"><a class="navigation-list__link" href="#">About Us</a></li>
+                <li class="navigation-list__article"><a class="navigation-list__link" href="#">Article</a></li>
                 <li class="navigation-list__property">
-                    <select class="navigation-list__property__property-selector" name="Property" value="Property">
+                    <select class="property__property-selector" name="Property" value="Property">
                       <option value="Property">Property</option>
                       <option value="1 Element">1 Element</option>
                       <option value="2 Element">2 Element</option>
@@ -60,109 +60,212 @@
             </ul>
         </nav>
         <div class="left-header-section">
-            <div class="left-header-section__main-text">
-                Find the place to live <span class="left-header-section__main-text__special-word">your dreams</span> easily here
+            <div class="left-header-main-text">
+                Find the place to live <span class="main-text__special-word">your dreams</span> easily here
             </div>
             <div class="left-header-section__text">
                 Everything you need about finding your place to live will be here, where it will be easier for you
             </div>
-            <div class="left-header-section__location-search">
-                <img src="images/fluent_location.svg" alt="fluent location">
-                <input class="left-header-section__location-search__input-for-search" type="search" placeholder="Search for the location you want!">
-                <button class="left-header-section__location-search__button-for-search">Search <img src="images/eva_arrow-ios-forward-fill.svg"></button>
+            <div class="left-header-location-search">
+                <img src="images/fluent_location.svg" alt="fluent location" class="location-search__image">
+                <input class="location-search__input-for-search" type="search" placeholder="Search for the location you want!">
+                <button class="location-search__button-for-search">Search <img src="images/eva_arrow-ios-forward-fill.svg"></button>
             </div>
-            <div class="left-header-section__about-partnership">
-                <div class="left-header-section__about-partnership__partnership-text">
+            <div class="left-header-about-partnership">
+                <div class="about-partnership__text">
                     Our Partnership
                 </div>
-                <div class="left-header-section__about-partnership__partnership-logos">
-                    <img src="images/traveloka_logo 2.svg">
-                    <img src="images/traveloka_logo 5.svg">
-                    <img src="images/traveloka_logo 3.svg">
-                    <img src="images/traveloka_logo 4.svg">
-                    </ul>
+                <div class="partnership__logos">
+                    <a href="#"><img src="images/traveloka-logo.svg"></a>
+                    <a href="#"><img src="images/tiket-com-logo.svg"></a>
+                    <a href="#"><img src="images/airbnb-logo.svg"></a>
+                    <a href="#"><img src="images/trip-advisor-logo.svg"></a>
                 </div>
             </div>
         </div>
         <div class="right-nav-section">
-          <div class="right-nav-section__about-us-people">
-              <img class="right-nav-section__about-us-people__first-people-image" src="images/first_people.svg">
-              <img class="right-nav-section__about-us-people__second-people-image" src="images/second_people.svg">
-              <img class="right-nav-section__about-us-people__third-people-image" src="images/third_people.svg">
-              <div class="right-nav-section__about-us-people__about-people-text">
-                <h3>1K+ People</h3>
-                <h4>Successfully Getting Home</h4>
+          <div class="right-section-about-people">
+              <img class="about-people__first-people-image" src="images/first_people.svg">
+              <img class="about-people__second-people-image" src="images/second_people.svg">
+              <img class="right-nav-section__third-people-image" src="images/third_people.svg">
+              <div class="about-people-text">
+                <h3 class="people-text__header">1K+ People</h3>
+                <h4 class="people-text__subtext">Successfully Getting Home</h4>
               </div>
           </div>
-          <div class="right-nav-section__about-houses">
-              <img class="right-nav-section__about-houses__house-image-svg" src="images/house.svg">
-              <h3>56 Houses</h3>
-              <h4>Sold Monthly</h4>
+          <div class="right-nav-section-about-houses">
+              <img class="about-houses__house-image-svg" src="images/house.svg">
+              <h3 class="about-houses__header">56 Houses</h3>
+              <h4 class="about-houses__subtext">Sold Monthly</h4>
           </div>
-          <div class="right-nav-section__about-looking-people">
-              <img class="right-nav-section__about-looking-people__last-girl-image" src="images/last_girl.svg">
-              <h3>4K</h3>
-              <h4>Peo</h4>
+          <div class="right-nav-section-looking-people">
+              <img class="looking-people__last-girl-image" src="images/last_girl.svg">
+              <h3 class="looking-people__header">4K</h3>
+              <h4 class="looking-people__subtext">Peo</h4>
           </div>
         </div>
     </header>
+    <main class="main">
+      <section class="main-recent-buildings">
+        <div class="blur-effect-5"> 
+          <svg xmlns="http://www.w3.org/2000/svg" width="444" height="678" viewBox="0 0 444 678" fill="none">
+            <g opacity="0.3" filter="url(#filter0_f_4_12)">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M301.209 352.001C290.173 386.669 264.914 413.19 242.037 441.462C222.326 465.821 201.32 487.535 176.292 506.373C148.414 527.356 122.122 556.558 87.2732 557.946C52.3115 559.339 22.9507 533.407 -5.93251 513.634C-33.0888 495.044 -52.4251 469.427 -75.8344 446.286C-107.874 414.612 -163.167 396.642 -169.434 352.001C-175.493 308.845 -131.511 275.35 -104.647 241.061C-80.8375 210.671 -54.2616 183.755 -21.5624 163.262C12.0146 142.219 48.0816 115.019 87.2732 120.785C126.401 126.54 143.038 176.499 179.088 192.779C221.116 211.758 283.755 185.58 311.836 222.192C338.703 257.222 314.604 309.919 301.209 352.001Z" fill="#82FFE8"/>
+            </g>
+            <defs>
+              <filter id="filter0_f_4_12" x="-290" y="0" width="734" height="678" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                <feGaussianBlur stdDeviation="60" result="effect1_foregroundBlur_4_12"/>
+              </filter>
+            </defs>
+          </svg>
+        </div>
+        <div class="blur-effect-6">
+          <svg xmlns="http://www.w3.org/2000/svg" width="472" height="678" viewBox="0 0 472 678" fill="none">
+            <g opacity="0.3" filter="url(#filter0_f_4_14)">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M329.209 352.001C318.173 386.669 292.914 413.19 270.037 441.462C250.326 465.821 229.32 487.535 204.292 506.373C176.414 527.356 150.122 556.558 115.273 557.946C80.3115 559.339 50.9507 533.407 22.0675 513.634C-5.08885 495.044 -24.4251 469.427 -47.8344 446.286C-79.8736 414.612 -135.167 396.642 -141.434 352.001C-147.493 308.845 -103.511 275.35 -76.6469 241.061C-52.8376 210.671 -26.2616 183.755 6.43753 163.262C40.0146 142.219 76.0816 115.019 115.273 120.785C154.401 126.54 171.038 176.499 207.088 192.779C249.116 211.758 311.755 185.58 339.836 222.192C366.703 257.222 342.604 309.919 329.209 352.001Z" fill="#C8FF82"/>
+            </g>
+            <defs>
+              <filter id="filter0_f_4_14" x="-262" y="0" width="734" height="678" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                <feGaussianBlur stdDeviation="60" result="effect1_foregroundBlur_4_14"/>
+              </filter>
+            </defs>
+          </svg>
+        </div>
+        <div class="find-more">
+          <img class="find-more__line" src="images/orange-line.svg">
+          <h4 class="find-more__label">See tips and trick from our partnership</h4>
+          <h2 class="find-more__main-text">Find out more about selling and buying homes</h2>
+          <button class="find-more__button">More Artikel</button>
+        </div>
+        <div class="main-content">
+          <div class="content-left-side">
+            <div class="left-side-item">
+              <img src="images/first-item-image.png" class="item__image">
+              <div class="item__description">
+                <div class="description-lecturer">
+                  <img src="images/lecturer-dianne-photo.png" class="lecturer__image">
+                  <h5 class="lecturer__name">Dianne Russell</h5>
+                </div>
+                <h3 class="item-title">The things we need to check when we want to buy a house</h3>
+                <div class="item-release">
+                  <img src="images/clocks-image.svg" class="release-ico">
+                  <h6 class="release-time">4 min read | 25 Apr 2021</h6>
+                </div>
+              </div>
+            </div>
+            <div class="left-side-item">
+              <img src="images/second-item-image.png" class="item__image">
+              <div class="item__description">
+                <div class="description-lecturer">
+                  <img src="images/lecturer-courtney-photo.png" class="lecturer__image">
+                  <h5 class="lecturer__name">Dianne Russell</h5>
+                </div>
+                <h3 class="item-title">7 Ways to distinguish the quality of the house we want to buy</h3>
+                <div class="item-release">
+                  <img src="images/clocks-image.svg" class="release-ico">
+                  <h6 class="release-time">6 min read | 24 Apr 2021</h6>
+                </div>
+              </div>
+            </div>
+            <div class="left-side-item">
+              <img src="images/third-item-image.png" class="item__image">
+              <div class="item__description">
+                <div class="description-lecturer">
+                  <img src="images/lecturer-darlene-photo.png" class="lecturer__image">
+                  <h5 class="lecturer__name">Dianne Russell</h5>
+                </div>
+                <h3 class="item-title">The best way to know the quality of the house we want to buy</h3>
+                <div class="item-release">
+                  <img src="images/clocks-image.svg" class="release-ico">
+                  <h6 class="release-time">2 min read | 24 Apr 2021</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content-right-side">
+            <img src="images/white-house-image.png" class="right-side-image">
+            <div class="right-side-description">
+              <div class="description-lecturer">
+                <img src="images/happy-men-image.png" class="lecturer__image">
+                <h5 class="lecturer__name">Cameron Williamson</h5>
+              </div>
+              <h3 class="right-description-label">12 Things to know before buying a house</h3>
+              <h4 class="right-description-subtext">
+                Want to buy a house but are unsure about what we should know, 
+                here I will try to explain what we should know and check when we want to buy a house
+              </h4>
+              <div class="item-release">
+                <img src="images/clocks-image.svg" class="release-ico">
+                <h6 class="release-time">8 min read | 25 Apr 2021</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <div class="subscribe-block">
-      <div class="subscribe-block__subscribe-text">
+      <div class="subscribe-block__text">
         Subscribe For More Info
         and update from Hounter
       </div>
-      <div class="subscribe-block__input-mail">
-        <img src="images/eva_email-fill.svg" alt="fluent_location">
-        <input class="subscribe-block__input-mail__input-for-subscribe" type="search" placeholder="Your email here">
-        <button class="subscribe-block__input-mail__button-for-subscribe">Subscribe Now</button>
+      <div class="subscribe-block-input-mail">
+        <img class="input-mail__image" src="images/eva_email-fill.svg" alt="fluent_location">
+        <input class="input-mail__input" type="search" placeholder="Your email here">
+        <button class="input-mail__button">Subscribe Now</button>
       </div>
-      <img class="subscribe-block__chair-image" src="images/Rectangle 12.png">
-      <img class="subscribe-block__orange-girl-image" src="images/Ellipse 7.png">
-      <img class="subscribe-block__blue-men-image" src="images/Ellipse 6.png">
-      <img class="subscribe-block__big-house-image" src="images/Rectangle 25.png">
-      <img class="subscribe-block__open-house-image" src="images/Rectangle 26.png">
-      <img class="subscribe-block__happy-girl-image" src="images/Ellipse 9.png">
-      <img class="subscribe-block__purple-men-image" src="images/Ellipse 8.png">
-      <img class="subscribe-block__white-chair-image" src="images/Rectangle 27.png">
+      <img class="subscribe-block__chair-image" src="images/white-pretty-chair-image.png">
+      <img class="subscribe-block__orange-girl-image" src="images/orange-girl-image.png">
+      <img class="subscribe-block__blue-men-image" src="images/blue-men-image.png">
+      <img class="subscribe-block__big-house-image" src="images/big-house-image.png">
+      <img class="subscribe-block__open-house-image" src="images/open-house-image.png">
+      <img class="subscribe-block__happy-girl-image" src="images/happy-girl-image.png">
+      <img class="subscribe-block__purple-men-image" src="images/purple-men-image.png">
+      <img class="subscribe-block__white-chair-image" src="images/white-chair-image.png">
     </div>
-    <footer>
+    <footer class="footer">
       <div class="footer-left-block">
-        <img src="images/Logo.svg">
-        <div class="footer-left-block__footer-left-text">
+        <img src="images/hounter-logo.svg">
+        <div class="footer-left-block-text">
           We provide information about properties such
           as houses, villas and apartments to help people
           find their dream home
-          <div class="footer-left-block__footer-left-text__social-media-block">
-            <img src="images/brandico_facebook.svg">
-            <img src="images/ant-design_twitter-outlined.svg">
-            <img src="images/ant-design_instagram-filled.svg">
+          <div class="footer-social-media-block">
+            <a href=""><img src="images/brandico_facebook.svg"></a>
+            <a href=""><img src="images/ant-design_twitter-outlined.svg"></a>
+            <a href=""><img src="images/ant-design_instagram-filled.svg"></a>
           </div>
         </div>
       </div>
-      <div class="footer-property-block">
-        <span class="footer-top-text">Property</span>
-        <ul class="footer-property-bloc__buildings-list">
-          <li>House</li>
-          <li>Apartment</li>
-          <li>Villa</li>
-        </ul>
-      </div>
-      <div class="footer-article-block">
-        <span class="footer-top-text">Article</span>
-        <ul class="footer-article-block__article-list">
-          <li>New Article</li>
-          <li>Popular Article</li>
-          <li>Most Read</li>
-          <li>Tips & Tricks</li>
-        </ul>
-      </div>
-      <div class="footer-contact-block">
-        <span class="footer-top-text">Contact</span>
-        <ul class="footer-contact-block__contact-list">
-          <li>2464 Royal Ln. Mesa, New Jersey 45463</li>
-          <li>(671) 555-0110</li>
-          <li>info@hounter.com</li>
-        </ul>
+      <div class="footer-main-block">
+        <div class="footer-main-links-block">
+          <span class="links-block__top-text">Property</span>
+          <ul class="links-block-list">
+            <li class="links-block__element"><a class="link" href="#">House</a></li>
+            <li class="links-block__element"><a class="link" href="#">Apartment</a></li>
+            <li class="links-block__element"><a class="link" href="#">Villa</a></li>
+          </ul>
+        </div>
+        <div class="footer-main-links-block">
+          <span class="links-block__top-text">Article</span>
+          <ul class="links-block-list">
+            <li class="links-block__element"><a class="link" href="#">New Article</a></li>
+            <li class="links-block__element"><a class="link" href="#">Popular Article</a></li>
+            <li class="links-block__element"><a class="link" href="#">Most Read</a></li>
+            <li class="links-block__element"><a class="link" href="#">Tips & Tricks</a></li>
+          </ul>
+        </div>
+        <div class="footer-main-links-block">
+          <span class="links-block__top-text">Contact</span>
+          <ul class="links-block-list">
+            <li class="links-block__element"><a class="link" href="https://www.google.com/maps/search/2464+Royal+Ln+Mesa,+New+Jersey+4546/@40.0677526,-76.0436009,8z/data=!3m1!4b1?entry=ttu" target="_blank">2464 Royal Ln Mesa, New Jersey 4546</a></li>
+            <li class="links-block__element"><a class="link" href="tel:671-555-0110">(671) 555-0110</a></li>
+            <li class="links-block__element"><a class="link" href="mailto:info@hounter.com">info@hounter.com</a></li>
+          </ul>
+        </div>
       </div>
       <div class="blur-effect-3">
         <svg xmlns="http://www.w3.org/2000/svg" width="414" height="507" viewBox="0 0 414 507" fill="none">
