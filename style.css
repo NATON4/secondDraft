@@ -226,7 +226,7 @@ table {
 }
 
 .left-header-section__text {
-    color: var(--mrt-app-neutral-01, #626687);
+    color: #626687;
     font-size: 16px;
     font-weight: 300;
     line-height: 28px;
@@ -235,7 +235,7 @@ table {
 }
 
 .about-partnership__text {
-    color: var(--mrt-app-neutral-01, #626687);
+    color: #626687;
     font-size: 15.5px;
     font-weight: 300;
     line-height: 28px;
@@ -256,7 +256,7 @@ table {
     padding: 4px 4px 4px 24px;
     align-items: center;
     border-radius: 32px;
-    border: 1px solid var(--neutral-300, #E0E3EB);
+    border: 1px solid #E0E3EB;
     background: #FFF;
     margin-bottom: 32px;
 }
