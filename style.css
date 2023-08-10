@@ -81,14 +81,12 @@ table {
 
 .body {
     font-family: 'Lexend';
-    white-space: none;
     width: 1440px;
     margin: 0 auto;
 }
 
 .header {
     width: 100%;
-    white-space: none;
     clear: left;
     align-items: center;
 }
