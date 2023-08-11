@@ -7,39 +7,39 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block;
+    display: block;
 }
 body {
-  line-height: 1;
+    line-height: 1;
 }
 ol, ul {
-  list-style: none;
+    list-style: none;
 }
 blockquote, q {
-  quotes: none;
+    quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: '';
-  content: none;
+    content: '';
+    content: none;
 }
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /*Blur effects*/
@@ -81,14 +81,12 @@ table {
 
 .body {
     font-family: 'Lexend';
-    white-space: none;
     width: 1440px;
     margin: 0 auto;
 }
 
 .header {
     width: 100%;
-    white-space: none;
     clear: left;
     align-items: center;
 }
@@ -228,7 +226,7 @@ table {
 }
 
 .left-header-section__text {
-    color: var(--mrt-app-neutral-01, #626687);
+    color: #626687;
     font-size: 16px;
     font-weight: 300;
     line-height: 28px;
@@ -237,7 +235,7 @@ table {
 }
 
 .about-partnership__text {
-    color: var(--mrt-app-neutral-01, #626687);
+    color: #626687;
     font-size: 15.5px;
     font-weight: 300;
     line-height: 28px;
@@ -258,7 +256,7 @@ table {
     padding: 4px 4px 4px 24px;
     align-items: center;
     border-radius: 32px;
-    border: 1px solid var(--neutral-300, #E0E3EB);
+    border: 1px solid #E0E3EB;
     background: #FFF;
     margin-bottom: 32px;
 }
@@ -643,7 +641,153 @@ footer {
 }
 
 /* Main content */
+.main_featured-houses {
+    width: 1320px;
+    height: 662px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+.featured-houses__top-navigation {
+    display: flex;
+    flex-direction: row;
+    gap: 138px;
+    align-items: flex-start;
+}
+.top-navigation__label {
+    color: #1B1C57;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+}
+.top-navigation__tabs {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+.button-label {
+    color: #888B97;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; /* 155.556% */
+}
+.tabs__button_type-houses {
+    display: flex;
+    flex-direction: row;
+    border-radius: 32px;
+    padding: 12px 24px;
+    align-items: center;
+    gap: 8px;
+    background-color: white;
+    border: 1px solid #E0E3EB;
+}
+.tabs__button_type-villas {
+    display: flex;
+    flex-direction: row;
+    border-radius: 32px;
+    padding: 12px 24px;
+    align-items: center;
+    gap: 8px;
+    background-color: white;
+    border: 1px solid #E0E3EB;
 
+}
+.tabs__button_type-apartments {
+    display: flex;
+    flex-direction: row;
+    border-radius: 32px;
+    padding: 12px 24px;
+    align-items: center;
+    gap: 8px;
+    background-color: white;
+    border: 1px solid #E0E3EB;
+}
+.featured-houses__items {
+    height: 560px;
+    width: 1320px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    overflow-x: scroll;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+}
+.item__carcass {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.item-header__image {
+    background-image: url("images/house-for-sale-image.png");
+    background-repeat: no-repeat;
+    height: 382px;
+    width: 340px;
+    max-height: 382px;
+    max-width: 340px;
+    position: relative;
+}
+.item-image-preference {
+    position: absolute;
+    left: 16px;
+    bottom: 16px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 8px 16px;
+    align-items: flex-start;
+    border-radius: 32px;
+
+    background: #FEE2E2;
+}
+.item-main__title {
+    color: #0E1735;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+}
+.item-main__price {
+    color: #3C4563;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; /* 160% */
+}
+.item-carcass__footer {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+.item-footer-seller {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.item-footer__image {
+    width: 40px;
+    height: 40px;
+}
+.item-seller__name {
+    color: #0E1735;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 133.333% */
+}
+.item-seller__location {
+    color: #888B97;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px;
+}
 .find-more {
     display: flex;
     flex-direction: column;
@@ -820,4 +964,10 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 12px;
+}
+html {
+    background-color: #343434;
+}
+body {
+    background-color: white;
 }
