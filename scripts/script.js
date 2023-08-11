@@ -1,3 +1,6 @@
+let prevButton = document.querySelector('.top-nav__prev-button');
+let nextButton = document.querySelector('.top-nav__next-button');
+
 function deleteCatalog() {
     let featuredHousesItems = document.querySelector('.featured-houses__items');
     while (featuredHousesItems.firstChild) {
@@ -25,11 +28,9 @@ housesButton.addEventListener('click', function() {
     let featuredHousesItems = document.querySelector('.featured-houses__items');
 
     for (let i = 0; i < 5; i++) {
-        // Створюємо елемент div з класом "item__carcass"
         let newItem = document.createElement('div');
         newItem.classList.add('item__carcass');
 
-        // Додаємо HTML-структуру внутрішніх елементів
         newItem.innerHTML = `
                 <div class="item-carcass__header">
                     <div class="item-header">
@@ -53,7 +54,6 @@ housesButton.addEventListener('click', function() {
                 </div>
         `;
 
-        // Додаємо новий елемент до блоку
         featuredHousesItems.appendChild(newItem);
     }
     deactivateAllButtons();
@@ -65,9 +65,12 @@ housesButton.addEventListener('click', function() {
     housesButton.disabled = true;
     villasButton.disabled = false;
     apartmentsButton.disabled = false;
+    prevButton.style.backgroundColor = '#10B981';
+    nextButton.style.backgroundColor = '';
+    nextButton.disabled = false;
+    prevButton.disabled = true;
 });
 
-// Обробник натискання на кнопку "Villas"
 villasButton.addEventListener('click', function() {
 
     deleteCatalog();
@@ -75,11 +78,9 @@ villasButton.addEventListener('click', function() {
     let featuredHousesItems = document.querySelector('.featured-houses__items');
 
     for (let i = 0; i < 5; i++) {
-        // Створюємо елемент div з класом "item__carcass"
         let newItem = document.createElement('div');
         newItem.classList.add('item__carcass');
 
-        // Додаємо HTML-структуру внутрішніх елементів
         newItem.innerHTML = `
                 <div class="item-carcass__header">
                     <div class="item-header">
@@ -103,7 +104,6 @@ villasButton.addEventListener('click', function() {
                 </div>
         `;
 
-        // Додаємо новий елемент до блоку
         featuredHousesItems.appendChild(newItem);
     }
     deactivateAllButtons();
@@ -115,9 +115,12 @@ villasButton.addEventListener('click', function() {
     housesButton.disabled = false;
     villasButton.disabled = true;
     apartmentsButton.disabled = false;
+    prevButton.style.backgroundColor = '';
+    nextButton.style.backgroundColor = '';
+    nextButton.disabled = false;
+    prevButton.disabled = false;
 });
 
-// Обробник натискання на кнопку "Apartments"
 apartmentsButton.addEventListener('click', function() {
 
     deleteCatalog();
@@ -162,10 +165,11 @@ apartmentsButton.addEventListener('click', function() {
     housesButton.disabled = false;
     villasButton.disabled = false;
     apartmentsButton.disabled = true;
+    prevButton.style.backgroundColor = '';
+    nextButton.style.backgroundColor = '#10B981';
+    nextButton.disabled = true;
+    prevButton.disabled = false;
 });
-
-let prevButton = document.querySelector('.top-nav__prev-button');
-let nextButton = document.querySelector('.top-nav__next-button');
 
 let buttons = [
     document.getElementById('housesChangeButton'),
@@ -173,37 +177,40 @@ let buttons = [
     document.getElementById('apartmentsChangeButton')
 ];
 
-let activeButtonIndex = 0;
+function getActiveButtonIndex() {
+    let activeButton = document.querySelector('.active-button');
+    if (activeButton) {
+        return buttons.findIndex(button => button === activeButton);
+    }
+    return -1;
+}
 
 function goToNextButton() {
+    let activeButtonIndex = getActiveButtonIndex();
     if (activeButtonIndex < buttons.length - 1) {
         activeButtonIndex++;
-        simulateButtonClick();
     }
+    simulateButtonClick(activeButtonIndex);
 }
 
 function goToPrevButton() {
+    let activeButtonIndex = getActiveButtonIndex();
     if (activeButtonIndex > 0) {
         activeButtonIndex--;
-        simulateButtonClick();
     }
+    simulateButtonClick(activeButtonIndex);
 }
 
-function simulateButtonClick() {
-    buttons[activeButtonIndex].click();
+function simulateButtonClick(index) {
+    buttons[index].click();
 }
 
 prevButton.addEventListener('click', function() {
-    if (activeButtonIndex >= 0) {
-        goToPrevButton();
-    }
+    goToPrevButton();
 });
 
 nextButton.addEventListener('click', function() {
-    if (activeButtonIndex <= buttons.length - 1) {
-        goToNextButton();
-    }
+    goToNextButton();
 });
-
 
 document.querySelector('#housesChangeButton').click();
