@@ -1129,6 +1129,27 @@ footer {
     border: 1px solid #E0E3EB;
 }
 @media screen and (max-width: 800px) {
+    .blur-effect-1 {
+        display: none;
+    }
+    .blur-effect-2 {
+        display: none;
+    }
+    .blur-effect-3 {
+        display: none;
+    }
+    .blur-effect-4 {
+        display: none;
+    }
+    .blur-effect-5 {
+        display: none;
+    }
+    .blur-effect-6 {
+        display: none;
+    }
+    .body {
+        width: 100%;
+    }
     .main-header {
         flex-direction: column;
         gap: 50px;
