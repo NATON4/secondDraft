@@ -41,9 +41,17 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-
+.header {
+    display: flex;
+    flex-direction: column;
+}
+.main-header {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    gap: 120px;
+}
 /*Blur effects*/
-
 .blur-effect-1 {
     float: left;
     z-index: -5;
@@ -82,7 +90,6 @@ table {
 .body {
     font-family: 'Lexend';
     width: 1440px;
-    margin: 0 auto;
 }
 
 .header {
@@ -99,10 +106,7 @@ table {
 }
 
 .navigation-list__logo {
-    padding-left: 120px;
-    margin-right: 578px;
     cursor: pointer;
-    float: left;
 }
 
 .navigation-list {
@@ -111,8 +115,18 @@ table {
     align-items: flex-start;
     vertical-align: middle;
     z-index: 10;
+    gap: 578px;
 }
-
+.navigation-list-first-block {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+.navigation-list-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 56px;
+}
 .navigation-list__link {
     text-decoration: none;
     color: white;
@@ -131,7 +145,6 @@ table {
 }
 
 .navigation-list__about-us, .navigation-list__article, .navigation-list__property {
-    float: left;
     font-size: 14px;
     color: #F0F3FD;
     height: 34px;
@@ -149,17 +162,14 @@ table {
 
 .navigation-list__about-us {
     width: 96px;
-    margin-right: 24px;
 }
 
 .navigation-list__article {
     width: 78px;
-    margin-right: 24px;
 }
 
 .navigation-list__property {
     width: 122px;
-    margin-right: 56px;
 }
 
 .property__property-selector {
@@ -179,7 +189,6 @@ table {
 
 .property__property-selector > option {
     width: 122px;
-    margin-right: 56px;
     background-color: black;
 }
 
@@ -311,7 +320,6 @@ table {
 
 .right-nav-section {
     background-image: url(images/white_house.png);
-    margin-left: 720px;
     height: 720px;
     width: 720px;
     z-index: 1;
@@ -1119,4 +1127,84 @@ footer {
 }
 .active-button:hover {
     border: 1px solid #E0E3EB;
+}
+@media screen and (max-width: 800px) {
+    .main-header {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .navigation-list {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+    .header-navigation-list {
+        align-items: center;
+    }
+    .navigation-list-buttons {
+        gap: 20px;
+        align-items: center;
+        margin-top: -50px;
+    }
+    .navigation-list-first-block {
+        gap: 10px;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .navigation-list__registration-button {
+        margin-top: 20px;
+    }
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .navigation-list__logo {
+        margin-left: 20px;
+    }
+    .body {
+        align-items: flex-start;
+    }
+    .main_featured-houses {
+        width: 720px;
+        height: 700px;
+        align-items: center;
+    }
+    .featured-houses__top-navigation {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        gap: 10px;
+        width: 719px;
+    }
+    .featured-houses__items {
+        height: 570px;
+        width: 719px;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        overflow: scroll hidden;
+        scroll-behavior: smooth;
+    }
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .subscribe-block-photos > * {
+        display: none;
+    }
+    .subscribe-block {
+        width: 550px;
+        border-radius: 32px;
+    }
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+    .footer-main-block {
+        gap: 35px;
+    }
 }
