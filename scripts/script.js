@@ -1,5 +1,5 @@
-let prevButton = document.querySelector('.top-nav__prev-button');
-let nextButton = document.querySelector('.top-nav__next-button');
+const prevButton = document.querySelector('.top-nav__prev-button');
+const nextButton = document.querySelector('.top-nav__next-button');
 
 function deleteCatalog() {
     let featuredHousesItems = document.querySelector('.featured-houses__items');
@@ -8,9 +8,9 @@ function deleteCatalog() {
     }
 }
 
-var housesButton = document.getElementById('housesChangeButton');
-var villasButton = document.getElementById('villasChangeButton');
-var apartmentsButton = document.getElementById('apartmentsChangeButton');
+const housesButton = document.getElementById('housesChangeButton');
+const villasButton = document.getElementById('villasChangeButton');
+const apartmentsButton = document.getElementById('apartmentsChangeButton');
 
 function deactivateAllButtons() {
     housesButton.classList.remove('active-button');
