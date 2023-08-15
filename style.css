@@ -232,7 +232,6 @@ html {
     padding-top: 182px;
     padding-left: 120px;
     width: 496px;
-    float: left;
     z-index: 6;
 }
 
@@ -1158,11 +1157,64 @@ footer {
 .active-button:hover {
     border: 1px solid #E0E3EB;
 }
-@media screen and (max-width: 1230px) {
+@media screen and (max-width: 1440px) {
+    .navigation-list {
+        gap: 40px
+    }
+    .blur-effect-1, .blur-effect-2 {
+        display: none;
+    }
+    .main-header {
+        display: flex;
+        margin: auto;
+        width: 100%;
+    }
     .left-header-section {
+        height: 270px;
         position: absolute;
-        background-color: rgba(102, 200, 57, 30%);
-        top: 0px;
-
+        top: 100px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        border-radius: 32px;
+        gap: 0px;
+    }
+    .right-nav-section {
+        position: relative;
+        align-self: center;
+        margin: 0 auto;
+    }
+    .left-header-main-text {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        align-self: center;
+        text-align: center;
+    }
+    .left-header-section__text {
+        position: absolute;
+        left: 0;
+        top: 25%;
+        width: 100%;
+        display: flex;
+        text-align: center;
+        align-items: flex-start;
+    }
+    .left-header-location-search {
+        margin: 0 auto;
+        position: absolute;
+        left: 7%;
+        top: 200px;
+    }
+    .about-partnership__text {
+        align-self: center;
+        width: 100%;
+        text-align: center;
+    }
+    .left-header-about-partnership {
+        position: absolute;
+        left: 100px;
+        top: 300px;
     }
 }
