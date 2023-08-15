@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@600&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body class="body">
 <div class="blur-effect-1">
@@ -46,62 +47,68 @@
     <nav class="header-navigation-list">
         <ul class="navigation-list">
             <li class="navigation-list__logo"><img src="images/hounter-logo.svg" alt="Hounter logo"></li>
-            <li class="navigation-list__about-us"><a class="navigation-list__link" href="#">About Us</a></li>
-            <li class="navigation-list__article"><a class="navigation-list__link" href="#">Article</a></li>
-            <li class="navigation-list__property">
-                <select class="property__property-selector" name="Property" value="Property">
-                    <option value="Property">Property</option>
-                    <option value="1 Element">1 Element</option>
-                    <option value="2 Element">2 Element</option>
-                    <option value="3 Element">3 Element</option>
-                </select>
-            </li>
-            <li class="navigation-list__registration-button"><button class="sign-up-button">Sign Up</button></li>
+            <div class="navigation-list-buttons">
+                <div class="navigation-list-first-block">
+                    <li class="navigation-list__about-us"><a class="navigation-list__link" href="#">About Us</a></li>
+                    <li class="navigation-list__article"><a class="navigation-list__link" href="#">Article</a></li>
+                    <li class="navigation-list__property">
+                        <select class="property__property-selector" name="Property" value="Property">
+                            <option value="Property">Property</option>
+                            <option value="1 Element">1 Element</option>
+                            <option value="2 Element">2 Element</option>
+                            <option value="3 Element">3 Element</option>
+                        </select>
+                    </li>
+                </div>
+                <li class="navigation-list__registration-button"><button class="sign-up-button">Sign Up</button></li>
+            </div>
         </ul>
     </nav>
-    <div class="left-header-section">
-        <div class="left-header-main-text">
-            Find the place to live <span class="main-text__special-word">your dreams</span> easily here
-        </div>
-        <div class="left-header-section__text">
-            Everything you need about finding your place to live will be here, where it will be easier for you
-        </div>
-        <div class="left-header-location-search">
-            <img src="images/fluent_location.svg" alt="fluent location" class="location-search__image">
-            <input class="location-search__input-for-search" type="search" placeholder="Search for the location you want!">
-            <button class="location-search__button-for-search">Search <img src="images/eva_arrow-ios-forward-fill.svg"></button>
-        </div>
-        <div class="left-header-about-partnership">
-            <div class="about-partnership__text">
-                Our PartnershipА
+    <div class="main-header">
+        <div class="left-header-section">
+            <div class="left-header-main-text">
+                Find the place to live <span class="main-text__special-word">your dreams</span> easily here
             </div>
-            <div class="partnership__logos">
-                <a href="#"><img src="images/traveloka-logo.svg"></a>
-                <a href="#"><img src="images/tiket-com-logo.svg"></a>
-                <a href="#"><img src="images/airbnb-logo.svg"></a>
-                <a href="#"><img src="images/trip-advisor-logo.svg"></a>
+            <div class="left-header-section__text">
+                Everything you need about finding your place to live will be here, where it will be easier for you
             </div>
-        </div>
-    </div>
-    <div class="right-nav-section">
-        <div class="right-section-about-people">
-            <img class="about-people__first-people-image" src="images/first_people.svg">
-            <img class="about-people__second-people-image" src="images/second_people.svg">
-            <img class="right-nav-section__third-people-image" src="images/third_people.svg">
-            <div class="about-people-text">
-                <h3 class="people-text__header">1K+ People</h3>
-                <h4 class="people-text__subtext">Successfully Getting Home</h4>
+            <div class="left-header-location-search">
+                <img src="images/fluent_location.svg" alt="fluent location" class="location-search__image">
+                <input class="location-search__input-for-search" type="search" placeholder="Search for the location you want!">
+                <button class="location-search__button-for-search">Search <img src="images/eva_arrow-ios-forward-fill.svg"></button>
+            </div>
+            <div class="left-header-about-partnership">
+                <div class="about-partnership__text">
+                    Our Partnership
+                </div>
+                <div class="partnership__logos">
+                    <a href="#"><img src="images/traveloka-logo.svg"></a>
+                    <a href="#"><img src="images/tiket-com-logo.svg"></a>
+                    <a href="#"><img src="images/airbnb-logo.svg"></a>
+                    <a href="#"><img src="images/trip-advisor-logo.svg"></a>
+                </div>
             </div>
         </div>
-        <div class="right-nav-section-about-houses">
-            <img class="about-houses__house-image-svg" src="images/house.svg">
-            <h3 class="about-houses__header">56 Houses</h3>
-            <h4 class="about-houses__subtext">Sold Monthly</h4>
-        </div>
-        <div class="right-nav-section-looking-people">
-            <img class="looking-people__last-girl-image" src="images/last_girl.svg">
-            <h3 class="looking-people__header">4K</h3>
-            <h4 class="looking-people__subtext">Peo</h4>
+        <div class="right-nav-section">
+            <div class="right-section-about-people">
+                <img class="about-people__first-people-image" src="images/first_people.svg">
+                <img class="about-people__second-people-image" src="images/second_people.svg">
+                <img class="right-nav-section__third-people-image" src="images/third_people.svg">
+                <div class="about-people-text">
+                    <h3 class="people-text__header">1K+ People</h3>
+                    <h4 class="people-text__subtext">Successfully Getting Home</h4>
+                </div>
+            </div>
+            <div class="right-nav-section-about-houses">
+                <img class="about-houses__house-image-svg" src="images/house.svg">
+                <h3 class="about-houses__header">56 Houses</h3>
+                <h4 class="about-houses__subtext">Sold Monthly</h4>
+            </div>
+            <div class="right-nav-section-looking-people">
+                <img class="looking-people__last-girl-image" src="images/last_girl.svg">
+                <h3 class="looking-people__header">4K</h3>
+                <h4 class="looking-people__subtext">Peo</h4>
+            </div>
         </div>
     </div>
 </header>
@@ -111,150 +118,30 @@
         <div class="featured-houses__top-navigation">
             <h3 class="top-navigation__label">Featured House</h3>
             <div class="top-navigation__tabs">
-                <button id="housesChangeButton" onclick="deleteCatalog()" class="tabs__button_type-houses">
-                    <img class="button-type__button" src="images/ico-house.svg">
-                    <h5 class="button-label">House</h5>
+                <button id="housesChangeButton" class="tabs__button_type-houses">
+                    <img class="button-image_type-house" src="images/ico-house.svg">
+                    <h5 class="button-label_type-house">House</h5>
                 </button>
-                <button id="villasChangeButton" onclick="createNewItem()" class="tabs__button_type-villas">
-                    <img class="button-type__button" src="images/ico-villa.svg">
-                    <h5 class="button-label">Villa</h5>
+                <button id="villasChangeButton" class="tabs__button_type-villas">
+                    <img class="button-image_type-villa" src="images/ico-villa.svg">
+                    <h5 class="button-label_type-villa">Villa</h5>
                 </button>
                 <button id="apartmentsChangeButton" class="tabs__button_type-apartments">
-                    <img class="button-type__button" src="images/ico-apartment.svg">
-                    <h5 class="button-label">Apartment</h5>
+                    <img class="button-image_type-apartment" src="images/ico-apartment.svg">
+                    <h5 class="button-label_type-apartment">Apartment</h5>
                 </button>
             </div>
             <div class="top-navigation-buttons">
-
+                <button class="top-nav__prev-button">
+                    <img src="images/prev-black-arrow.svg">
+                </button>
+                <button class="top-nav__next-button">
+                    <img src="images/next-black-arrow.svg">
+                </button>
             </div>
         </div>
         <div class="featured-houses__items">
-            <div class="item__carcass">
-                <div class="item-carcass__header">
-                    <div class="item-header__image">
-                        <div class="item-image-preference">
-                            <img class="image-preference__ico" src="images/item-image-fire-ico.svg">
-                            <h5 class="image-preference__label">Popular</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-carcass__main">
-                    <h5 class="item-main__title">Roselands House</h5>
-                    <h5 class="item-main__price">$ 35.000.000</h5>
-                </div>
-                <div class="item-carcass__footer">
-                    <img class="item-footer__image" src="images/girl-seller-image.png">
-                    <div class="item-footer-seller">
-                        <h5 class="item-seller__name">Dianne Russell</h5>
-                        <h5 class="item-seller__location">Manchester, Kentucky</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="item__carcass">
-                <div class="item-carcass__header">
-                    <div class="item-header__image">
-                        <div class="item-image-preference">
-                            <img class="image-preference__ico" src="images/item-image-fire-ico.svg">
-                            <h5 class="image-preference__label">Popular</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-carcass__main">
-                    <h5 class="item-main__title">Roselands House</h5>
-                    <h5 class="item-main__price">$ 35.000.000</h5>
-                </div>
-                <div class="item-carcass__footer">
-                    <img class="item-footer__image" src="images/girl-seller-image.png">
-                    <div class="item-footer-seller">
-                        <h5 class="item-seller__name">Dianne Russell</h5>
-                        <h5 class="item-seller__location">Manchester, Kentucky</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="item__carcass">
-                <div class="item-carcass__header">
-                    <div class="item-header__image">
-                        <div class="item-image-preference">
-                            <img class="image-preference__ico" src="images/item-image-fire-ico.svg">
-                            <h5 class="image-preference__label">Popular</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-carcass__main">
-                    <h5 class="item-main__title">Roselands House</h5>
-                    <h5 class="item-main__price">$ 35.000.000</h5>
-                </div>
-                <div class="item-carcass__footer">
-                    <img class="item-footer__image" src="images/girl-seller-image.png">
-                    <div class="item-footer-seller">
-                        <h5 class="item-seller__name">Dianne Russell</h5>
-                        <h5 class="item-seller__location">Manchester, Kentucky</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="item__carcass">
-                <div class="item-carcass__header">
-                    <div class="item-header__image">
-                        <div class="item-image-preference">
-                            <img class="image-preference__ico" src="images/item-image-fire-ico.svg">
-                            <h5 class="image-preference__label">Popular</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-carcass__main">
-                    <h5 class="item-main__title">Roselands House</h5>
-                    <h5 class="item-main__price">$ 35.000.000</h5>
-                </div>
-                <div class="item-carcass__footer">
-                    <img class="item-footer__image" src="images/girl-seller-image.png">
-                    <div class="item-footer-seller">
-                        <h5 class="item-seller__name">Dianne Russell</h5>
-                        <h5 class="item-seller__location">Manchester, Kentucky</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="item__carcass">
-                <div class="item-carcass__header">
-                    <div class="item-header__image">
-                        <div class="item-image-preference">
-                            <img class="image-preference__ico" src="images/item-image-fire-ico.svg">
-                            <h5 class="image-preference__label">Popular</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-carcass__main">
-                    <h5 class="item-main__title">Roselands House</h5>
-                    <h5 class="item-main__price">$ 35.000.000</h5>
-                </div>
-                <div class="item-carcass__footer">
-                    <img class="item-footer__image" src="images/girl-seller-image.png">
-                    <div class="item-footer-seller">
-                        <h5 class="item-seller__name">Dianne Russell</h5>
-                        <h5 class="item-seller__location">Manchester, Kentucky</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="item__carcass">
-                <div class="item-carcass__header">
-                    <div class="item-header__image">
-                        <div class="item-image-preference">
-                            <img class="image-preference__ico" src="images/item-image-fire-ico.svg">
-                            <h5 class="image-preference__label">Popular</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-carcass__main">
-                    <h5 class="item-main__title">Roselands House</h5>
-                    <h5 class="item-main__price">$ 35.000.000</h5>
-                </div>
-                <div class="item-carcass__footer">
-                    <img class="item-footer__image" src="images/girl-seller-image.png">
-                    <div class="item-footer-seller">
-                        <h5 class="item-seller__name">Dianne Russell</h5>
-                        <h5 class="item-seller__location">Manchester, Kentucky</h5>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </section>
 
@@ -369,14 +256,16 @@
         <input class="input-mail__input" type="search" placeholder="Your email here">
         <button class="input-mail__button">Subscribe Now</button>
     </div>
-    <img class="subscribe-block__chair-image" src="images/white-pretty-chair-image.png">
-    <img class="subscribe-block__orange-girl-image" src="images/orange-girl-image.png">
-    <img class="subscribe-block__blue-men-image" src="images/blue-men-image.png">
-    <img class="subscribe-block__big-house-image" src="images/big-house-image.png">
-    <img class="subscribe-block__open-house-image" src="images/open-house-image.png">
-    <img class="subscribe-block__happy-girl-image" src="images/happy-girl-image.png">
-    <img class="subscribe-block__purple-men-image" src="images/purple-men-image.png">
-    <img class="subscribe-block__white-chair-image" src="images/white-chair-image.png">
+    <div class = "subscribe-block-photos">
+        <img class="subscribe-block__chair-image" src="images/white-pretty-chair-image.png">
+        <img class="subscribe-block__orange-girl-image" src="images/orange-girl-image.png">
+        <img class="subscribe-block__blue-men-image" src="images/blue-men-image.png">
+        <img class="subscribe-block__big-house-image" src="images/big-house-image.png">
+        <img class="subscribe-block__open-house-image" src="images/open-house-image.png">
+        <img class="subscribe-block__happy-girl-image" src="images/happy-girl-image.png">
+        <img class="subscribe-block__purple-men-image" src="images/purple-men-image.png">
+        <img class="subscribe-block__white-chair-image" src="images/white-chair-image.png">
+    </div>
 </div>
 <footer class="footer">
     <div class="footer-left-block">
@@ -449,5 +338,6 @@
     </div>
     <script src="scripts/script.js"></script>
 </footer>
+<script src="scripts/script.js"></script>
 </body>
 </html>
