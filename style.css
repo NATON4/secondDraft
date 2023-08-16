@@ -107,7 +107,6 @@ table {
 }
 .content-wrapper {
     width: 1440px;
-    border: 2px solid red;
     margin: 0 auto;
     align-items: center;
     align-content: center;
@@ -1290,14 +1289,16 @@ footer {
         flex-direction: column;
     }
 }
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 415px) {
     .content-wrapper {
-        width: calc(100vmax);
+        width: calc(100vmin);
+        align-items: center;
+        justify-content: center;
     }
     .header {
         width: 350px;
-        margin: auto;
         align-items: center;
+        margin: auto;
     }
     .header-navigation-list {
         width: 100%;
@@ -1314,6 +1315,7 @@ footer {
     }
     .left-header-section {
         align-items: center;
+        width: 350px;
     }
     .left-header-section > * {
         width: 345px;
@@ -1351,8 +1353,8 @@ footer {
     }
     .main {
         width: 350px;
-        margin: auto;
         align-items: center;
+        margin: auto;
     }
     .main_featured-houses {
         height: 100%;
@@ -1403,7 +1405,6 @@ footer {
     }
     .subscribe-block {
         width: 350px;
-        margin: auto;
         align-items: center;
         display: flex;
         flex-direction: column;
@@ -1426,8 +1427,8 @@ footer {
         margin: 0;
     }
     .footer {
+        margin: 10px auto;
         width: 350px;
-        margin: auto;
         align-items: center;
     }
 }
