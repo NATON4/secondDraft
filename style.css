@@ -76,7 +76,7 @@ table {
     z-index: -15;
     position: absolute;
     float: left;
-    right: 0px;
+    right: 0;
     transform: translate(0px, -165px);
     display: none;
 }
@@ -103,7 +103,7 @@ table {
 }
 /*End of blur effects*/
 .body {
-    font-family: 'Lexend';
+    font-family: 'Lexend', sans-serif;
 }
 .content-wrapper {
     width: 1440px;
@@ -160,7 +160,7 @@ table {
 }
 
 .navigation-list li > * {
-    font-family: 'Lexend';
+    font-family: 'Lexend', sans-serif;
     cursor: pointer;
 }
 
@@ -289,7 +289,7 @@ table {
 }
 
 .location-search__input-for-search::placeholder {
-    font-family: 'Lexend';
+    font-family: 'Lexend', sans-serif;
     font-weight: 500;
     color: #888B97;
 }
@@ -508,7 +508,7 @@ table {
 }
 
 .input-mail__input::placeholder {
-    font-family: 'Lexend';
+    font-family: 'Lexend', sans-serif;
     font-weight: 500;
     color: #888B97;
 }
@@ -1223,10 +1223,10 @@ footer {
 }
 @media screen and (max-width: 1220px) {
     .main-content {
-        gap: 0px;
+        gap: 0;
     }
     .main-header {
-        gap: 0px;
+        gap: 0;
     }
     .navigation-list {
         gap: 220px;
@@ -1244,6 +1244,9 @@ footer {
     }
 }
 @media screen and (max-width: 1140px) {
+    .content-wrapper {
+        width: calc(100vmax);
+    }
     .main-header {
         flex-direction: column;
     }
@@ -1265,23 +1268,166 @@ footer {
         gap: 10px;
     }
     .main_featured-houses {
-        width: 40%;
+        width: 70%;
         height: 700px;
+        gap: 10px;
     }
     .footer-main-block {
         gap: 20px;
     }
     .left-header-section {
-        padding-left: 0px;
+        padding-left: 0;
     }
     .featured-houses__top-navigation {
         flex-direction: column;
         align-items: center;
+        gap: 15px;
     }
     .subscribe-block {
         width: 600px;
     }
     .footer {
         flex-direction: column;
+    }
+}
+@media screen and (max-width: 410px) {
+    .content-wrapper {
+        width: calc(100vmax);
+    }
+    .header {
+        width: 350px;
+        margin: auto;
+        align-items: center;
+    }
+    .header-navigation-list {
+        width: 100%;
+        position: relative;
+    }
+    .navigation-list {
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    .navigation-list-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .left-header-section {
+        align-items: center;
+    }
+    .left-header-section > * {
+        width: 345px;
+    }
+    .left-header-main-text {
+        text-align: center;
+    }
+    .left-header-section__text {
+        text-align: center;
+    }
+    .location-search__image {
+        display: none;
+    }
+    .location-search__arrow {
+        display: none;
+    }
+    .about-partnership__text {
+        text-align: center;
+    }
+    .partnership__logos {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .right-nav-section {
+        width: 100%;
+    }
+    .right-section-about-people {
+        left: 0;
+    }
+    .right-nav-section-about-houses {
+        display: none;
+    }
+    .right-nav-section-looking-people {
+        display: none;
+    }
+    .main {
+        width: 350px;
+        margin: auto;
+        align-items: center;
+    }
+    .main_featured-houses {
+        height: 100%;
+    }
+    .featured-houses__top-navigation {
+        width: 100%;
+    }
+    .top-navigation__tabs {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+    .featured-houses__items {
+        width: 340px;
+    }
+    .main-recent-buildings {
+        width: 340px;
+    }
+    .find-more {
+        width: 100%;
+    }
+    .find-more__main-text {
+        width: 100%;
+    }
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 1500px;
+    }
+    .content-left-side {
+        width: 100%;
+        height: 1000px;
+    }
+    .content-right-side {
+        width: 100%;
+    }
+    .left-side-item {
+        flex-direction: column;
+        gap: 10px;
+        width: 340px;
+        align-items: center;
+    }
+    .item__description {
+        align-items: center;
+        text-align: center;
+    }
+    .subscribe-block {
+        width: 350px;
+        margin: auto;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .subscribe-block__text {
+        width: 100%;
+        text-align: center;
+    }
+    .subscribe-block-input-mail {
+        width: 100%;
+    }
+    .input-mail__input {
+        width: 120px;
+    }
+    .input-mail__image {
+        display: none;
+    }
+    .input-mail__button {
+        margin: 0;
+    }
+    .footer {
+        width: 350px;
+        margin: auto;
+        align-items: center;
     }
 }

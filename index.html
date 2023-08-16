@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <title>Second Draft</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Lexend' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@900&family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
@@ -53,12 +54,14 @@
                         <li class="navigation-list__about-us"><a class="navigation-list__link" href="#">About Us</a></li>
                         <li class="navigation-list__article"><a class="navigation-list__link" href="#">Article</a></li>
                         <li class="navigation-list__property">
-                            <select class="property__property-selector" name="Property" value="Property">
-                                <option value="Property">Property</option>
-                                <option value="1 Element">1 Element</option>
-                                <option value="2 Element">2 Element</option>
-                                <option value="3 Element">3 Element</option>
-                            </select>
+                            <label>
+                                <select class="property__property-selector" name="Property">
+                                    <option value="Property">Property</option>
+                                    <option value="1 Element">1 Element</option>
+                                    <option value="2 Element">2 Element</option>
+                                    <option value="3 Element">3 Element</option>
+                                </select>
+                            </label>
                         </li>
                     </div>
                     <li class="navigation-list__registration-button"><button class="sign-up-button">Sign Up</button></li>
@@ -76,37 +79,37 @@
                 <div class="left-header-location-search">
                     <img src="images/fluent_location.svg" alt="fluent location" class="location-search__image">
                     <input class="location-search__input-for-search" type="search" placeholder="Search for the location you want!">
-                    <button class="location-search__button-for-search">Search <img src="images/eva_arrow-ios-forward-fill.svg"></button>
+                    <button class="location-search__button-for-search">Search <img class="location-search__arrow" src="images/eva_arrow-ios-forward-fill.svg" alt=""></button>
                 </div>
                 <div class="left-header-about-partnership">
                     <div class="about-partnership__text">
                         Our Partnership
                     </div>
                     <div class="partnership__logos">
-                        <a href="#"><img src="images/traveloka-logo.svg"></a>
-                        <a href="#"><img src="images/tiket-com-logo.svg"></a>
-                        <a href="#"><img src="images/airbnb-logo.svg"></a>
-                        <a href="#"><img src="images/trip-advisor-logo.svg"></a>
+                        <a href="#"><img src="images/traveloka-logo.svg" alt=""></a>
+                        <a href="#"><img src="images/tiket-com-logo.svg" alt=""></a>
+                        <a href="#"><img src="images/airbnb-logo.svg" alt=""></a>
+                        <a href="#"><img src="images/trip-advisor-logo.svg" alt=""></a>
                     </div>
                 </div>
             </div>
             <div class="right-nav-section">
                 <div class="right-section-about-people">
-                    <img class="about-people__first-people-image" src="images/first_people.svg">
-                    <img class="about-people__second-people-image" src="images/second_people.svg">
-                    <img class="right-nav-section__third-people-image" src="images/third_people.svg">
+                    <img class="about-people__first-people-image" src="images/first_people.svg" alt="">
+                    <img class="about-people__second-people-image" src="images/second_people.svg" alt="">
+                    <img class="right-nav-section__third-people-image" src="images/third_people.svg" alt="">
                     <div class="about-people-text">
                         <h3 class="people-text__header">1K+ People</h3>
                         <h4 class="people-text__subtext">Successfully Getting Home</h4>
                     </div>
                 </div>
                 <div class="right-nav-section-about-houses">
-                    <img class="about-houses__house-image-svg" src="images/house.svg">
+                    <img class="about-houses__house-image-svg" src="images/house.svg" alt="">
                     <h3 class="about-houses__header">56 Houses</h3>
                     <h4 class="about-houses__subtext">Sold Monthly</h4>
                 </div>
                 <div class="right-nav-section-looking-people">
-                    <img class="looking-people__last-girl-image" src="images/last_girl.svg">
+                    <img class="looking-people__last-girl-image" src="images/last_girl.svg" alt="">
                     <h3 class="looking-people__header">4K</h3>
                     <h4 class="looking-people__subtext">Peo</h4>
                 </div>
@@ -147,24 +150,24 @@
                 <h3 class="top-navigation__label">Featured House</h3>
                 <div class="top-navigation__tabs">
                     <button id="housesChangeButton" class="tabs__button_type-houses">
-                        <img class="button-image_type-house" src="images/ico-house.svg">
+                        <img class="button-image_type-house" src="images/ico-house.svg" alt="">
                         <h5 class="button-label_type-house">House</h5>
                     </button>
                     <button id="villasChangeButton" class="tabs__button_type-villas">
-                        <img class="button-image_type-villa" src="images/ico-villa.svg">
+                        <img class="button-image_type-villa" src="images/ico-villa.svg" alt="">
                         <h5 class="button-label_type-villa">Villa</h5>
                     </button>
                     <button id="apartmentsChangeButton" class="tabs__button_type-apartments">
-                        <img class="button-image_type-apartment" src="images/ico-apartment.svg">
+                        <img class="button-image_type-apartment" src="images/ico-apartment.svg" alt="">
                         <h5 class="button-label_type-apartment">Apartment</h5>
                     </button>
                 </div>
                 <div class="top-navigation-buttons">
                     <button class="top-nav__prev-button">
-                        <img src="images/prev-black-arrow.svg">
+                        <img src="images/prev-black-arrow.svg" alt="">
                     </button>
                     <button class="top-nav__next-button">
-                        <img src="images/next-black-arrow.svg">
+                        <img src="images/next-black-arrow.svg" alt="">
                     </button>
                 </div>
             </div>
@@ -174,7 +177,7 @@
         </section>
         <section class="main-recent-buildings">
             <div class="find-more">
-                <img class="find-more__line" src="images/orange-line.svg">
+                <img class="find-more__line" src="images/orange-line.svg" alt="">
                 <h4 class="find-more__label">See tips and trick from our partnership</h4>
                 <h2 class="find-more__main-text">Find out more about selling and buying homes</h2>
                 <button class="find-more__button">More Artikel</button>
@@ -182,53 +185,53 @@
             <div class="main-content">
                 <div class="content-left-side">
                     <div class="left-side-item">
-                        <img src="images/first-item-image.png" class="item__image">
+                        <img src="images/first-item-image.png" class="item__image" alt="">
                         <div class="item__description">
                             <div class="description-lecturer">
-                                <img src="images/lecturer-dianne-photo.png" class="lecturer__image">
+                                <img src="images/lecturer-dianne-photo.png" class="lecturer__image" alt="">
                                 <h5 class="lecturer__name">Dianne Russell</h5>
                             </div>
                             <h3 class="item-title">The things we need to check when we want to buy a house</h3>
                             <div class="item-release">
-                                <img src="images/clocks-image.svg" class="release-ico">
+                                <img src="images/clocks-image.svg" class="release-ico" alt="">
                                 <h6 class="release-time">4 min read | 25 Apr 2021</h6>
                             </div>
                         </div>
                     </div>
                     <div class="left-side-item">
-                        <img src="images/second-item-image.png" class="item__image">
+                        <img src="images/second-item-image.png" class="item__image" alt="">
                         <div class="item__description">
                             <div class="description-lecturer">
-                                <img src="images/lecturer-courtney-photo.png" class="lecturer__image">
+                                <img src="images/lecturer-courtney-photo.png" class="lecturer__image" alt="">
                                 <h5 class="lecturer__name">Dianne Russell</h5>
                             </div>
                             <h3 class="item-title">7 Ways to distinguish the quality of the house we want to buy</h3>
                             <div class="item-release">
-                                <img src="images/clocks-image.svg" class="release-ico">
+                                <img src="images/clocks-image.svg" class="release-ico" alt="">
                                 <h6 class="release-time">6 min read | 24 Apr 2021</h6>
                             </div>
                         </div>
                     </div>
                     <div class="left-side-item">
-                        <img src="images/third-item-image.png" class="item__image">
+                        <img src="images/third-item-image.png" class="item__image" alt="">
                         <div class="item__description">
                             <div class="description-lecturer">
-                                <img src="images/lecturer-darlene-photo.png" class="lecturer__image">
+                                <img src="images/lecturer-darlene-photo.png" class="lecturer__image" alt="">
                                 <h5 class="lecturer__name">Dianne Russell</h5>
                             </div>
                             <h3 class="item-title">The best way to know the quality of the house we want to buy</h3>
                             <div class="item-release">
-                                <img src="images/clocks-image.svg" class="release-ico">
+                                <img src="images/clocks-image.svg" class="release-ico" alt="">
                                 <h6 class="release-time">2 min read | 24 Apr 2021</h6>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="content-right-side">
-                    <img src="images/white-house-image.png" class="right-side-image">
+                    <img src="images/white-house-image.png" class="right-side-image" alt="">
                     <div class="right-side-description">
                         <div class="description-lecturer">
-                            <img src="images/happy-men-image.png" class="lecturer__image">
+                            <img src="images/happy-men-image.png" class="lecturer__image" alt="">
                             <h5 class="lecturer__name">Cameron Williamson</h5>
                         </div>
                         <h3 class="right-description-label">12 Things to know before buying a house</h3>
@@ -237,7 +240,7 @@
                             here I will try to explain what we should know and check when we want to buy a house
                         </h4>
                         <div class="item-release">
-                            <img src="images/clocks-image.svg" class="release-ico">
+                            <img src="images/clocks-image.svg" class="release-ico" alt="">
                             <h6 class="release-time">8 min read | 25 Apr 2021</h6>
                         </div>
                     </div>
@@ -257,27 +260,27 @@
             <button class="input-mail__button">Subscribe Now</button>
         </div>
         <div class = "subscribe-block-photos">
-            <img class="subscribe-block__chair-image" src="images/white-pretty-chair-image.png">
-            <img class="subscribe-block__orange-girl-image" src="images/orange-girl-image.png">
-            <img class="subscribe-block__blue-men-image" src="images/blue-men-image.png">
-            <img class="subscribe-block__big-house-image" src="images/big-house-image.png">
-            <img class="subscribe-block__open-house-image" src="images/open-house-image.png">
-            <img class="subscribe-block__happy-girl-image" src="images/happy-girl-image.png">
-            <img class="subscribe-block__purple-men-image" src="images/purple-men-image.png">
-            <img class="subscribe-block__white-chair-image" src="images/white-chair-image.png">
+            <img class="subscribe-block__chair-image" src="images/white-pretty-chair-image.png" alt="">
+            <img class="subscribe-block__orange-girl-image" src="images/orange-girl-image.png" alt="">
+            <img class="subscribe-block__blue-men-image" src="images/blue-men-image.png" alt="">
+            <img class="subscribe-block__big-house-image" src="images/big-house-image.png" alt="">
+            <img class="subscribe-block__open-house-image" src="images/open-house-image.png" alt="">
+            <img class="subscribe-block__happy-girl-image" src="images/happy-girl-image.png" alt="">
+            <img class="subscribe-block__purple-men-image" src="images/purple-men-image.png" alt="">
+            <img class="subscribe-block__white-chair-image" src="images/white-chair-image.png" alt="">
         </div>
     </div>
     <footer class="footer">
         <div class="footer-left-block">
-            <img src="images/hounter-logo.svg">
+            <img src="images/hounter-logo.svg" alt="">
             <div class="footer-left-block-text">
                 We provide information about properties such
                 as houses, villas and apartments to help people
                 find their dream home
                 <div class="footer-social-media-block">
-                    <a href=""><img src="images/brandico_facebook.svg"></a>
-                    <a href=""><img src="images/ant-design_twitter-outlined.svg"></a>
-                    <a href=""><img src="images/ant-design_instagram-filled.svg"></a>
+                    <a href=""><img src="images/brandico_facebook.svg" alt=""></a>
+                    <a href=""><img src="images/ant-design_twitter-outlined.svg" alt=""></a>
+                    <a href=""><img src="images/ant-design_instagram-filled.svg" alt=""></a>
                 </div>
             </div>
         </div>
