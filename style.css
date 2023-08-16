@@ -45,24 +45,32 @@ table {
     display: flex;
     flex-direction: column;
 }
+* {
+    box-sizing: border-box;
+}
 .main-header {
     display: flex;
     flex-direction: row;
     position: relative;
     width: 100%;
-    gap: 120px;
+    gap: 230px;
     align-items: center;
     justify-content: center;
+}
+.body::-webkit-scrollbar {
+    display: none;
 }
 /*Blur effects*/
 .blur-effect-1 {
     float: left;
     z-index: -5;
     position: absolute;
+    display: none;
 }
 .blur-effect-2 {
     z-index: -10;
     position: absolute;
+    display: none;
 }
 .blur-effect-3 {
     z-index: -15;
@@ -70,38 +78,36 @@ table {
     float: left;
     right: 0px;
     transform: translate(0px, -165px);
+    display: none;
 }
 .blur-effect-4 {
     z-index: -20;
     position: absolute;
     right: 46px;
     transform: translate(0px, -120px);
+    display: none;
 }
 .blur-effect-5 {
     z-index: -40;
     position: absolute;
     align-self: flex-start;
     transform: translate(0px, 700px);
+    display: none;
 }
 .blur-effect-6 {
     z-index: -30;
     position: absolute;
     align-self: flex-start;
     transform: translate(0px, 900px);
+    display: none;
 }
-
 /*End of blur effects*/
-html {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 .body {
     font-family: 'Lexend';
 }
 .content-wrapper {
     width: 1440px;
-    border: 1px solid red;
+    border: 2px solid red;
     margin: 0 auto;
     align-items: center;
     align-content: center;
@@ -588,6 +594,7 @@ footer {
     flex-direction: row;
     gap: 263px;
     align-items: center;
+    justify-content: center;
 }
 
 .footer-left-block {
@@ -597,7 +604,6 @@ footer {
     flex-direction: column;
     align-items: flex-start;
     gap: 24px;
-    padding-left: 120px;
 }
 
 .footer-left-block-text {
@@ -1157,64 +1163,125 @@ footer {
 .active-button:hover {
     border: 1px solid #E0E3EB;
 }
+/*
+* {
+    border: 1px solid green !important;
+}
+.body {
+    border: 1px solid yellow !important;
+}
+.content-wrapper {
+    border: 2px solid red !important;
+}*/
 @media screen and (max-width: 1440px) {
-    .navigation-list {
-        gap: 40px
-    }
-    .blur-effect-1, .blur-effect-2 {
-        display: none;
+    .content-wrapper {
+        margin: 0;
+        width: calc(100vmax);
     }
     .main-header {
-        display: flex;
-        margin: auto;
-        width: 100%;
+        gap: 100px;
     }
-    .left-header-section {
-        height: 270px;
-        position: absolute;
-        top: 100px;
-        background-color: white;
-        display: flex;
-        flex-direction: column;
-        border-radius: 32px;
-        gap: 0px;
-    }
-    .right-nav-section {
-        position: relative;
-        align-self: center;
-        margin: 0 auto;
-    }
-    .left-header-main-text {
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        align-self: center;
-        text-align: center;
-    }
-    .left-header-section__text {
-        position: absolute;
-        left: 0;
-        top: 25%;
-        width: 100%;
-        display: flex;
-        text-align: center;
-        align-items: flex-start;
+    .navigation-list {
+        gap: 478px;
     }
     .left-header-location-search {
-        margin: 0 auto;
-        position: absolute;
-        left: 7%;
-        top: 200px;
-    }
-    .about-partnership__text {
-        align-self: center;
         width: 100%;
-        text-align: center;
     }
-    .left-header-about-partnership {
-        position: absolute;
-        left: 100px;
-        top: 300px;
+    .featured-houses__items {
+        width: 65%;
+    }
+}
+@media screen and (max-width: 1340px) {
+    .content-wrapper {
+        margin: 0;
+        width: calc(100vmax);
+    }
+    .main_featured-houses {
+        width: 90%;
+    }
+    .featured-houses__top-navigation {
+        gap: 100px;
+    }
+    .featured-houses__items {
+        width: 70%;
+    }
+    .right-nav-section {
+        width: 600px;
+        height: 600px;
+        border-bottom-left-radius: 50px;
+    }
+    .navigation-list {
+        gap: 320px;
+    }
+    .left-header-section {
+        padding-top: 50px;
+        height: 100%;
+    }
+    .footer {
+        gap: 100px;
+    }
+}
+@media screen and (max-width: 1220px) {
+    .main-content {
+        gap: 0px;
+    }
+    .main-header {
+        gap: 0px;
+    }
+    .navigation-list {
+        gap: 220px;
+    }
+    .subscribe-block {
+        width: 1000px;
+        border-radius: 32px;
+        align-self: center;
+    }
+    .subscribe-block-photos {
+        display: none;
+    }
+    .left-header-section {
+        padding-left: 7%;
+    }
+}
+@media screen and (max-width: 1140px) {
+    .main-header {
+        flex-direction: column;
+    }
+    .navigation-list-buttons {
+        gap: 5px;
+    }
+    .navigation-list-first-block {
+        gap: 10px;
+    }
+    .main-content {
+        flex-direction: column;
+    }
+    .right-nav-section {
+        width: 500px;
+        height: 500px;
+    }
+    .navigation-list {
+        padding-top: 10px;
+        gap: 10px;
+    }
+    .main_featured-houses {
+        width: 40%;
+        height: 700px;
+    }
+    .footer-main-block {
+        gap: 20px;
+    }
+    .left-header-section {
+        padding-left: 0px;
+    }
+    .featured-houses__top-navigation {
+        flex-direction: column;
+        align-items: center;
+    }
+    .subscribe-block {
+        width: 600px;
+    }
+    .footer {
+        flex-direction: column;
     }
 }
